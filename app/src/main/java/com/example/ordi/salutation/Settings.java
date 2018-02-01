@@ -34,11 +34,19 @@ public class Settings extends AppCompatActivity{
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 String notification = "";
-                // в зависимости от значения isChecked выводим нужное сообщение
                 if (isChecked) {
                     notification = "On";
+                    switchSound.setChecked(true);
+                    switchSound.setEnabled(true);
+                    switchVibration.setChecked(true);
+                    switchVibration.setEnabled(true);
                 } else {
                     notification = "Off";
+                    switchSound.setChecked(false);
+                    switchSound.setEnabled(false);
+                    switchVibration.setChecked(false);
+                    switchVibration.setEnabled(false);
+
                 }
                 SharedPreferences preferences = getSharedPreferences("button", MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
