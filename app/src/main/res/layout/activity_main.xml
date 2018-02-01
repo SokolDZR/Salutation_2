@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    tools:context="com.example.ordi.salutation.MainActivity">
+    <!--android:background="@mipmap/start_view"
+    Перенести строку в RelativeLayout для создания фона-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Поздравлялка"
+        android:textSize="44dp"
+        android:textAlignment="center"
+        android:textColor="#13c97a"
+        android:id="@+id/comeInName"
+        android:layout_marginTop="46dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В о й т и"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:background="#13c97a"
+        android:id="@+id/comeInB"
+        android:layout_above="@+id/ourVkImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мы ВКонтакте"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#9dc8ea"
+        android:id="@+id/ourVkText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/ourVkImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ourvk"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/ourVkText"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
