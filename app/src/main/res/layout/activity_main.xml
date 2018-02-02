@@ -19,6 +19,7 @@
         android:id="@+id/comeInName"
         android:layout_marginTop="46dp" />
     <Button
+        android:id="@+id/comeInB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="В о й т и"
@@ -28,7 +29,6 @@
         android:paddingLeft="120dp"
         android:paddingRight="120dp"
         android:background="@color/GreeanLight"
-        android:id="@+id/comeInB"
         android:layout_above="@+id/ourVkImg"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp" />
@@ -47,13 +47,23 @@
 
     <ImageView
         android:id="@+id/ourVkImg"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:srcCompat="@drawable/ourvk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vk"
         android:layout_marginBottom="10dp"
         android:layout_above="@+id/ourVkText"
         android:layout_centerHorizontal="true"
         />
+
+    <ImageView
+        android:id="@+id/settingsB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/settings" />
 
 
 </RelativeLayout>

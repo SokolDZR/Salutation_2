@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button comeInB;
-    ImageView ourVkImg;
+    ImageView ourVkImg, settingsB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,15 +23,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         comeInB = (Button) findViewById(R.id.comeInB);
         comeInB.setOnClickListener(this);
         ourVkImg = (ImageView) findViewById(R.id.ourVkImg);
+        settingsB = (ImageView) findViewById(R.id.settingsB);
+        settingsB.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.settingsB:
+                Intent settingsIntent = new Intent(this, Settings.class);
+                startActivity(settingsIntent);
+                break;
             case R.id.comeInB:
-                Intent intent = new Intent(this, Settings.class);
-                startActivity(intent);
+                Intent navigationIntent = new Intent(this, NavigationActivity.class);
+                startActivity(navigationIntent);
                 break;
             default:
                 break;

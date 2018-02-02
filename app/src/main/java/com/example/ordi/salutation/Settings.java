@@ -13,15 +13,14 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.CompoundButton;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.Toast;
 
 public class Settings extends AppCompatActivity{
 
-    private Switch switchNot;
-    private Switch switchSound;
-    private Switch switchVibration;
+    private Switch switchNot, switchSound, switchVibration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
