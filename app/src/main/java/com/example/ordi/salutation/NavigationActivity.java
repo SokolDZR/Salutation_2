@@ -1,5 +1,8 @@
 package com.example.ordi.salutation;
 
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,13 +25,20 @@ public class NavigationActivity extends AppCompatActivity
         setContentView(R.layout.activity_navigation);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        // Круглая кнопка
+        FloatingActionButton navigationFab = (FloatingActionButton) findViewById(R.id.navigationFab);
+        // Цвет кнопки
+        navigationFab.setBackgroundTintList(ColorStateList.valueOf(Color
+                .parseColor("#13c97a")));
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        navigationFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                // Здесь должен быть переход на след. страницу
+                //Intent do_salutation = new Intent(this, DataInputActivity.class);
+                //startActivity(do_salutation);
             }
         });
 
@@ -68,7 +78,8 @@ public class NavigationActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent settingsIntent = new Intent(this, Settings.class);
+            startActivity(settingsIntent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -80,10 +91,12 @@ public class NavigationActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.seleclSalutation) {
+            Intent seleclSalutation = new Intent(this, SelectSalutation.class);
+            startActivity(seleclSalutation);
         } else if (id == R.id.nav_gallery) {
-
+            Intent seleclSalutation = new Intent(this, DataInputActivity.class);
+            startActivity(seleclSalutation);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
@@ -98,4 +111,5 @@ public class NavigationActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

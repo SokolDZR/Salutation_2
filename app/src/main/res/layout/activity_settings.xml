@@ -3,56 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.ordi.salutation.Settings">
-    <LinearLayout
-        android:id="@+id/layoutSet"
+
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
-                <Switch
-                    android:id="@+id/switchNot"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:theme="@style/Switch"
-                    android:checked="true"
-                    android:text="Уведомления"
-                    android:textSize="20dp"
-                    />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarSettings"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/ActionBar"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+        <Switch
+            android:id="@+id/switchNot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:theme="@style/Green"
+            android:checked="true"
+            android:text="Уведомления"
+            android:textSize="20dp"
+            />
         <Switch
             android:id="@+id/switchSound"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Switch"
+            android:layout_margin="10dp"
+            android:theme="@style/Green"
             android:checked="true"
             android:text="Звук"
             android:textSize="20dp"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
         <Switch
             android:id="@+id/switchVibration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Switch"
+            android:layout_margin="10dp"
+            android:theme="@style/Green"
             android:checked="true"
             android:text="Вибрация"
             android:textSize="20dp"
             />
-    </LinearLayout>
 
 
 </LinearLayout>

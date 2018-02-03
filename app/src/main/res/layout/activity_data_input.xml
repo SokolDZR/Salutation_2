@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ordi.salutation.NavigationActivity">
+    tools:context="com.example.ordi.salutation.DataInputActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppBarOverlay">
+        android:theme="@style/AppBarOverlay"
+        >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -20,14 +21,14 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_navigation" />
+    <include layout="@layout/content_data_input" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/navigationFab"
+        android:id="@+id/dataInputFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_plus" />
+        app:srcCompat="@drawable/ic_next"/>
 
 </android.support.design.widget.CoordinatorLayout>
