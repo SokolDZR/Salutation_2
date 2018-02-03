@@ -37,10 +37,10 @@
         <activity
             android:name=".DataInputActivity"
             android:label="Ввод параметров"
-            android:parentActivityName=".NavigationActivity">
+            android:parentActivityName=".SelectSalutation">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ordi.salutation.NavigationActivity" />
+                android:value="com.example.ordi.salutation.SelectSalutation" />
         </activity>
         <activity
             android:name=".SelectSalutation"
