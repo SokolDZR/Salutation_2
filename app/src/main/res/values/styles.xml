@@ -12,14 +12,13 @@
 
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="Switch">
-        <item name="colorControlActivated">@color/GreeanLight</item>
-
+    <style name="SelectionRG">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
-
-    <style name="Green">
-        <item name="colorControlActivated">@color/GreeanLight</item>
-
+    <style name="DataInputTV">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
-
 </resources>

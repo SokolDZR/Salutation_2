@@ -35,11 +35,7 @@ public class NavigationActivity extends AppCompatActivity
         navigationFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                // Здесь должен быть переход на след. страницу
-                //Intent do_salutation = new Intent(this, DataInputActivity.class);
-                //startActivity(do_salutation);
+                startActivity(new Intent(view.getContext(), SelectSalutation.class));
             }
         });
 
@@ -96,8 +92,7 @@ public class NavigationActivity extends AppCompatActivity
             Intent seleclSalutation = new Intent(this, SelectSalutation.class);
             startActivity(seleclSalutation);
         } else if (id == R.id.nav_gallery) {
-            Intent seleclSalutation = new Intent(this, DataInputActivity.class);
-            startActivity(seleclSalutation);
+
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {

@@ -5,19 +5,19 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grad"
+    android:background="@drawable/background"
     tools:context="com.example.ordi.salutation.MainActivity">
     <!--android:background="@mipmap/start_view"
     Перенести строку в RelativeLayout для создания фона-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:text="Мастерская поздравлений"
         android:textSize="44dp"
         android:textAlignment="center"
-        android:textColor="@color/GreeanLight"
+        android:textColor="@color/colorAccent"
         android:id="@+id/comeInName"
-        android:layout_marginTop="46dp" />
+        android:layout_marginTop="26dp" />
     <Button
         android:id="@+id/comeInB"
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:textAlignment="center"
         android:paddingLeft="120dp"
         android:paddingRight="120dp"
-        android:background="@color/GreeanLight"
+        android:background="@color/colorAccent"
         android:layout_above="@+id/ourVkImg"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp" />
@@ -39,7 +39,7 @@
         android:text="Мы ВКонтакте"
         android:textSize="14dp"
         android:textStyle="bold"
-        android:textColor="#9dc8ea"
+        android:textColor="#ffffff"
         android:id="@+id/ourVkText"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -57,9 +57,9 @@
 
     <ImageView
         android:id="@+id/settingsB"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"

@@ -16,7 +16,7 @@
             android:id="@+id/toolbarSettings"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/ActionBar"
+            android:background="@color/colorPrimary"
             app:popupTheme="@style/PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
@@ -26,7 +26,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:theme="@style/Green"
             android:checked="true"
             android:text="Уведомления"
             android:textSize="20dp"
@@ -36,7 +35,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:theme="@style/Green"
             android:checked="true"
             android:text="Звук"
             android:textSize="20dp"
@@ -46,7 +44,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:theme="@style/Green"
             android:checked="true"
             android:text="Вибрация"
             android:textSize="20dp"

@@ -1,5 +1,6 @@
 package com.example.ordi.salutation;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,9 +9,9 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.RadioGroup;
 
 public class SelectSalutation extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +25,12 @@ public class SelectSalutation extends AppCompatActivity {
         selectSalFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Праздник выбран", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(view.getContext(), DataInputActivity.class));
             }
         });
         // стрелка "назад"
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
 }

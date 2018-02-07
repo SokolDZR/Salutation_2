@@ -7,8 +7,37 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.ordi.salutation.SelectSalutation"
     tools:showIn="@layout/activity_select_salutation">
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Выбрать праздник"/>
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/SelectionRG">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Праздник1"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Праздник2"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Праздник3"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Праздник4"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Праздник5"/>
+
+
+        </RadioGroup>
+    </ScrollView>
 </LinearLayout>
