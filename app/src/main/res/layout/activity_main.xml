@@ -29,31 +29,12 @@
         android:paddingLeft="120dp"
         android:paddingRight="120dp"
         android:background="@color/colorAccent"
-        android:layout_above="@+id/ourVkImg"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Мы ВКонтакте"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:id="@+id/ourVkText"
+        android:layout_marginBottom="72dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"/>
+        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:id="@+id/ourVkImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/vk"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/ourVkText"
-        android:layout_centerHorizontal="true"
-        />
+
 
     <ImageView
         android:id="@+id/settingsB"

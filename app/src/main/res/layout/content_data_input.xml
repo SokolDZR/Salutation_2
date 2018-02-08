@@ -14,20 +14,21 @@
         android:layout_height="wrap_content"
         android:text="Имя (в именительном падеже)"/>
     <EditText
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:inputType="textCapSentences|textMultiLine"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Пожелания (прилагательные в родительном падеже)"/>
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <TextView
+        android:id="@+id/editTextWishes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="*"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:hint="Пожелания"
+     />
+
 </LinearLayout>

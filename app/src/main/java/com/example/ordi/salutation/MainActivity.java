@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         comeInB = (Button) findViewById(R.id.comeInB);
         comeInB.setOnClickListener(this);
-        ourVkImg = (ImageView) findViewById(R.id.ourVkImg);
+
         settingsB = (ImageView) findViewById(R.id.settingsB);
         settingsB.setOnClickListener(this);
 

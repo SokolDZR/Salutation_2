@@ -8,14 +8,17 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.EditText;
 
 public class DataInputActivity extends AppCompatActivity {
-
+    String name, wishes;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_input);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        EditText editTextName = (EditText) findViewById(R.id.editTextName);
+        EditText editTextWishes = (EditText) findViewById(R.id.editTextWishes);
         setSupportActionBar(toolbar);
 
         FloatingActionButton dataInputFab = (FloatingActionButton) findViewById(R.id.dataInputFab);
@@ -28,8 +31,11 @@ public class DataInputActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        // стрелка "назад"
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        name = editTextName.getText().toString();
+        wishes = editTextWishes.getText().toString();
+
+
     }
 
 }
