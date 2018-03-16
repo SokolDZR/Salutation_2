@@ -17,14 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Settings"
-            android:label="Settings"
-            android:parentActivityName=".NavigationActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ordi.salutation.NavigationActivity" />
-        </activity>
-        <activity
             android:name=".NavigationActivity"
             android:label="@string/title_activity_navigation"
             android:parentActivityName=".MainActivity">

@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/seleclSalutation"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Выбрать праздник" />
+            android:id="@+id/selectSalutation_item"
+            android:icon="@drawable/gift"
+            android:title="@string/select_salutation_item" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/instruction_item"
+            android:icon="@drawable/ic_instruction"
+            android:title="@string/instruction_item" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/settings_item"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings_item" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/aboutUs_item"
+            android:icon="@drawable/ic_about_us"
+            android:title="@string/about_us_item" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Связаться с нами" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:icon="@drawable/ic_share"
+                android:title="Поделиться" />
         </menu>
     </item>
 

@@ -1,14 +1,11 @@
 <resources>
     <string name="app_name">UniqueC</string>
-    <string name="title_activity_menu">Menu</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Настройки</string>
     <string name="ActoinBarColor">#3a5e90</string>
     <string name="title_activity_navigation">Создай Поздравление!</string>
-    <string name="title_activity_data_input">DataInputActivity</string>
-    <string name="title_activity_select_salutation">SelectSalutation</string>
-    <string name="select_salutation_item">Выбрать праздник</string>
+    <string name="select_salutation_item">Создать Поздравление</string>
     <string name="settings_item">Настройки</string>
     <string-array name="salutation_array">
         <item>Праздник 1</item>
@@ -18,6 +15,21 @@
         <item>Праздник 5</item>
     </string-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="instruction">Как принято считать, стремящиеся вытеснить традиционное производство, нанотехнологии, инициированные исключительно синтетически, представлены в исключительно положительном свете. Лишь ключевые особенности структуры проекта могут быть объявлены нарушающими общечеловеческие нормы этики и морали. Кстати, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть заблокированы в рамках своих собственных рациональных ограничений. Реплицированные с зарубежных источников, современные исследования могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Глубокий уровень погружения представляет собой интересный эксперимент проверки поэтапного и последовательного развития общества.</string>
-    <string name="instructionTitle">Инструкция</string>
+    <string name="instruction">1. Перейти к созданию поздравления через левое меню или кнопку \"+\".\n
+        2. Выбрать праздник.\n
+        3. Заполнить поля.\n
+        4. Выбрать понравившееся поздравление из предложенных вариантов.
+    </string>
+    <string name="about_us"> Жил-был Вася. У Васи была плохая фантазия. Однажды, ему надо было придумать поздравление, но единственное, что он смог придумать, это пожелать счастья и здоровья :(\n\n
+    <b><i>МЫ СОЗДАЛИ ПРИЛОЖЕНИЕ, ЧТОБЫ ПОМОЧЬ ВАСЕ!</i></b>\n\n
+        Теперь каждый может создать большое, красивое и главное уникальное поздравление на любой праздник!
+    </string>
+    <string name="instruction_item">Инструкция</string>
+    <string name="about_us_item">О нас</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_about_us">О нас</string>
+    <string name="title_select_salutation">Выбор праздника</string>
+    <string name="title_instruction">Инструкция</string>
+    <string name="title_data_input">Ввод параметров</string>
+    <string name="title_show_salutation">Поздравления</string>
 </resources>

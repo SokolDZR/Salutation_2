@@ -4,15 +4,13 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:theme="@style/DataInputTV"
+    android:theme="@style/TextStyle"
     tools:context="com.example.ordi.salutation.ShowSalutationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:background="@drawable/green_stroke"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Поздравление" />
-
+        android:text="Поздравление. Здесь будет текст большого, длинного и красивого поздравления, в котором учтены введенные пользователем данные." />
 </FrameLayout>

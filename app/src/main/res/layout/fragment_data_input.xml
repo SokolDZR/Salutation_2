@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/TextStyle"
+    android:background="@color/white"
+    tools:context="com.example.ordi.salutation.DataInputFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_stroke"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Имя (в именительном падеже)"/>
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя"
+            android:inputType="textCapSentences|textMultiLine"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пожелания (прилагательные в родительном падеже)"/>
+        <EditText
+            android:id="@+id/editTextWishes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пожелания"
+            />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/DataInputFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_next"
+        />
+</FrameLayout>

@@ -1,28 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ordi.salutation.Settings">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbarSettings"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
-            app:popupTheme="@style/PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
+    android:background="@color/white"
+    android:theme="@style/TextStyle"
+    tools:context="com.example.ordi.salutation.InstructionFragment">
         <Switch
-            android:id="@+id/switchNot"
+            android:id="@+id/fr_switchNot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -31,7 +16,7 @@
             android:textSize="20dp"
             />
         <Switch
-            android:id="@+id/switchSound"
+            android:id="@+id/fr_switchSound"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -40,7 +25,7 @@
             android:textSize="20dp"
             />
         <Switch
-            android:id="@+id/switchVibration"
+            android:id="@+id/fr_switchVibration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -51,4 +36,3 @@
 
 
 </LinearLayout>
-
