@@ -12,5 +12,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Поздравление. Здесь будет текст большого, длинного и красивого поздравления, в котором учтены введенные пользователем данные." />
+        android:id="@+id/show_salutation" />
 </FrameLayout>
