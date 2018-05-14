@@ -5,12 +5,10 @@
     android:background="@color/white"
     android:orientation="vertical"
     tools:context="com.example.ordi.salutation.SelectSalutationFragment">
-
     <ListView
         android:id="@+id/salutation_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:entries="@array/salutation_array">
     </ListView>
-
 </FrameLayout>

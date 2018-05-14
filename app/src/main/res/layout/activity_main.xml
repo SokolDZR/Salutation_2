@@ -5,20 +5,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
     tools:context="com.example.ordi.salutation.MainActivity">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="@string/app_name"
-            android:textSize="44dp"
-            android:textStyle="italic"
-            android:textAlignment="center"
-            android:textColor="@color/colorAccent"
-            android:id="@+id/comeInName"
-            android:layout_marginTop="70dp" />
-    <Button
+    <!--android:background="@drawable/background_gradient"-->
+
+    <!--<Button
         android:id="@+id/comeInB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,5 +22,45 @@
 
         android:layout_marginBottom="70dp"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/ic_launcer_green"
+
+        android:layout_alignTop="@+id/comeInName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="44dp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/comeInName"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создание поздравлений..."
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/loading"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp" />
+
 </RelativeLayout>

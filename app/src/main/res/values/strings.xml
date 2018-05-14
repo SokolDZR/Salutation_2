@@ -4,15 +4,17 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Настройки</string>
     <string name="ActoinBarColor">#3a5e90</string>
-    <string name="title_activity_navigation">Создай Поздравление!</string>
+    <string name="title_activity_navigation">Выбор праздника</string>
     <string name="select_salutation_item">Создать Поздравление</string>
     <string name="settings_item">Настройки</string>
     <string-array name="salutation_array">
-        <item>Праздник 1</item>
-        <item>Праздник 2</item>
-        <item>Праздник 3</item>
-        <item>Праздник 4</item>
-        <item>Праздник 5</item>
+        <item><i><b>Январь</b></i></item>
+        <item>Новый год</item>
+        <item>14 Февраля</item>
+        <item>23 Февраля</item>
+        <item>8 Марта</item>
+        <item>Пасха</item>
+        <item>День рождения(эксперимент)</item>
     </string-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="instruction">1. Перейти к созданию поздравления через левое меню или кнопку \"+\".\n
@@ -26,18 +28,14 @@
     </string>
     <string name="instruction_item">Инструкция</string>
     <string name="about_us_item">О нас</string>
+
     <string name="title_settings">Настройки</string>
     <string name="title_about_us">О нас</string>
     <string name="title_select_salutation">Выбор праздника</string>
     <string name="title_instruction">Инструкция</string>
     <string name="title_data_input">Ввод параметров</string>
     <string name="title_show_salutation">Поздравления</string>
-    <string-array name="show_salutation">
-        <item>Новый год — это светлый праздник, который способен воплощать в реальность любые мечты и желания.
-            Поздравляю Вас с Новым годом, желаю, чтобы в этом году Вы успели сделать все, что не успели сделать в прошлом.
-            Чтобы удача шла с вами в ногу и чтобы счастье никогда не покидало ваш дом. С Новым годом</item>
-        <item>Пусть этот новый год сотрет все огорчения прошлого, но преумножит накопленные благополучие и успех.
-            Пусть каждая минута нового года принесет что-то новое и восхитительное в вашу жизнь.
-            Пусть этот год станет годом грандиозных встреч и фантастических начинаний, годом рождения мечты, которая непременно исполнится! </item>
-    </string-array>
+    <string name="title_activity_show">ShowActivity</string>
+    <string name="title_activity_show_salutation">ShowSalutationActivity</string>
+
 </resources>

@@ -6,39 +6,83 @@
     android:theme="@style/TextStyle"
     android:background="@color/white"
     tools:context="com.example.ordi.salutation.DataInputFragment">
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/green_stroke"
-        android:orientation="vertical">
-        <TextView
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Имя (в именительном падеже)"/>
-        <EditText
-            android:id="@+id/editTextName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Имя"
-            android:inputType="textCapSentences|textMultiLine"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Пожелания (прилагательные в родительном падеже)"/>
-        <EditText
-            android:id="@+id/editTextWishes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Пожелания"
-            />
-    </LinearLayout>
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/DataInputFab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_next"
-        />
+            android:background="@drawable/green_stroke"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите имя"
+                android:inputType="textCapSentences|textMultiLine" />
+            <EditText
+                android:id="@+id/editTextWishes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите пожелания"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="0dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Число поздравляемых"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/rg_count"
+                    android:layout_margin="0dp">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/count_one"
+                        android:text="Один"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/count_many"
+                        android:text="Много"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Форма обращения"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/rg_form"
+                    android:layout_margin="0dp">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/form_one"
+                        android:text="Ты"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/form_many"
+                        android:text="Вы"/>
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </FrameLayout>
